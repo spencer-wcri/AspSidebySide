@@ -33,7 +33,7 @@ module Program =
         let app = builder.Build()
 
         if not (builder.Environment.IsDevelopment()) then
-            app.UseExceptionHandler("/Home/Error")
+            app.UseExceptionHandler("/FHome/Error")
             app.UseHsts() |> ignore // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 
         app.UseHttpsRedirection()
@@ -42,7 +42,7 @@ module Program =
         app.UseRouting()
         app.UseAuthorization()
 
-        app.MapControllerRoute(name = "default", pattern = "{controller=Home}/{action=Index}/{id?}")
+        app.MapControllerRoute(name = "default", pattern = "{controller=FHome}/{action=Index}/{id?}")
 
         app.MapRazorPages()
 

@@ -11,7 +11,7 @@ open Microsoft.Extensions.Logging
 
 open Mvc.FSharp.Models
 
-type HomeController (logger : ILogger<HomeController>) =
+type FHomeController (logger : ILogger<FHomeController>) =
     inherit Controller()
 
     member this.Index () =
