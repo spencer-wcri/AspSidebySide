@@ -7,7 +7,6 @@
   <ItemGroup>
     <Compile Include="Models/ErrorViewModel.fs" />
     <Compile Include="Controllers\FHomeController.fs" />
-    <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
